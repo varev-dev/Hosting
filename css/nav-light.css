@@ -1,0 +1,26 @@
+body.light nav#vrvNavigation div#vrvNavL a div#vrvLogo {
+    background-color: #fafafa;
+}
+
+body.light nav#vrvNavigation div#vrvNavL a {
+    color: #00ffff;
+}
+
+body.light nav#vrvNavigation div#vrvNavL a:hover{
+    color: #ffffff;
+}
+
+body.light nav#vrvNavigation div#vrvNavR ul#vrvMenu li a button:hover {
+    background-color: #fafafa;
+    color: #008888;
+}
+
+body.light nav#vrvNavigation div#vrvNavR ul#vrvMenu li a button:hover {
+    background-color: black;
+    color: #fafafa;
+}
+
+body.light nav#vrvNavigation div#vrvNavR ul#vrvMenu li a button#vrvActual{
+    background-color: black;
+    color: #00ffff;
+}
