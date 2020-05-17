@@ -87,8 +87,13 @@ nav#vrvSettings div#vrvBasket a{
     color: white;
 }
 
-nav#vrvSettings div#vrvBasket p{
-    color: white;
+nav#vrvSettings div#vrvBasket a p{
+    position: absolute;
+    top: 10px;
+    left: 24px;
+    color: rgb(0, 255, 255);
+    font-size: 12px;
+    transition: .1s;
 }
 nav#vrvSettings button {
     width: 40px;

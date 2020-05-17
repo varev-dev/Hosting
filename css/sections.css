@@ -1,8 +1,10 @@
 section {
     width: 80%;
-    min-height: 50vh;
-    background-color: #4d4d4d;
-    padding: 25vh 10% 25vh 10%;
+    min-height: 75vh;
+    background-color: #353535;
+    padding: 25vh 10% 0 10%;
+    border-bottom: 1px solid black;
+    text-align: center;
 }
 
 section#vrvStoreAdd div#vrvOff {
@@ -12,7 +14,7 @@ section#vrvStoreAdd div#vrvOff {
 }
 
 section#vrvStoreAdd div.sec {
-    margin-left: 11%;
+    margin-left: 12.5%;
 }
 
 section#vrvStoreAdd div#vrvOff div#vrvTO {
@@ -25,7 +27,7 @@ section#vrvStoreAdd div#vrvOff div#vrvTO {
 
 section#vrvStoreAdd div#vrvOff div#vrvBO {
     width: 100%;
-    height: 30vh;
+    min-height: 30vh;
 }
 
 section#vrvStoreAdd div#vrvOff div#vrvTO i {
@@ -39,7 +41,7 @@ section#vrvStoreAdd div#vrvOff div#vrvTO i p{
 
 section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAboutItem {
     width: 100%;
-    height: 25vh;
+    min-height: 25vh;
     background-color: #303030;
     text-align: center;
 }
@@ -72,4 +74,14 @@ section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAddToStore button {
 section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAddToStore button:hover {
     background-color: #0a0a0ad0;
     color: rgb(0, 255, 255);
+}
+section div#vrvComment {
+    width: 100%;
+    height: 25vh;
+}
+section#vrvStoreAdd div#vrvComment h1 {
+    clear: both;
+    text-align: center;
+    left: 10px;
+    color: whitesmoke;
 }
