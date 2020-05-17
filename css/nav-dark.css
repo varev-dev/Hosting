@@ -20,3 +20,8 @@ nav#vrvNavigation div#vrvNavR ul#vrvMenu li a button#vrvActual{
     background-color: black;
     color: #00ffff;
 }
+
+nav#vrvSettings button {
+    background-color: black;
+    color: white;
+}

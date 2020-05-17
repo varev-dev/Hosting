@@ -12,15 +12,15 @@ body.light nav#vrvNavigation div#vrvNavL a:hover{
 
 body.light nav#vrvNavigation div#vrvNavR ul#vrvMenu li a button:hover {
     background-color: #fafafa;
-    color: #008888;
-}
-
-body.light nav#vrvNavigation div#vrvNavR ul#vrvMenu li a button:hover {
-    background-color: black;
-    color: #fafafa;
+    color: black;
 }
 
 body.light nav#vrvNavigation div#vrvNavR ul#vrvMenu li a button#vrvActual{
     background-color: black;
     color: #00ffff;
+}
+
+body.light nav#vrvSettings button {
+    color: black;
+    background-color: #fafafa;
 }

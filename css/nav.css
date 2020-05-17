@@ -22,6 +22,7 @@ nav#vrvNavigation div#vrvNavL a div#vrvLogo {
     height: 50px;
     text-align: center;
     padding-top: 100px;
+    transition: 0.5s;
 }
 
 nav#vrvNavigation div#vrvNavL a div#vrvLogo h1 {
@@ -64,4 +65,19 @@ nav#vrvNavigation div#vrvNavR ul#vrvMenu li a button {
     font-size: 15px;
     transition: .5s;
     cursor: pointer;
+}
+
+nav#vrvSettings {
+    position: fixed;
+    margin-top: 40vh;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+nav#vrvSettings button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    transition: 0.5s;
 }
