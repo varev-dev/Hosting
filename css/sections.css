@@ -52,10 +52,9 @@ section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAboutItem p{
     color: #bebebe;
 }
 section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAboutItem div {
-    margin-left: 50%;
     min-height: 1vh;
     width: 100%;
-    text-align: right;
+    text-align: center;
 }
 section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAboutItem div p#vrvPrice {
     color: whitesmoke;
@@ -122,7 +121,7 @@ section#vrvStoreBasket div#vrvBasketPreview div#vrvInstr {
     border-bottom: 1px solid #525252;
 }
 
-#vrvType, #vrvAmount, #vrvPrice {
+#vrvType, #vrvAmount, #vrvPriceTT {
     height: 5vh;
     line-height: 5vh;
     font-size: 20px;
@@ -139,7 +138,7 @@ section#vrvStoreBasket div#vrvBasketPreview div#vrvInstr div#vrvAmount {
     text-align: center;
     padding: 0 5% 0 5%;
 }
-section#vrvStoreBasket div#vrvBasketPreview div#vrvInstr div#vrvPrice {
+section#vrvStoreBasket div#vrvBasketPreview div#vrvInstr div#vrvPriceTT {
     margin-left: 5%;
     text-align: right;
     padding: 0;
@@ -170,7 +169,7 @@ section#vrvStoreBasket div#vrvBasketPreview div#vrvCountAll {
 section#vrvStoreBasket div#vrvBasketPreview div#vrvCountAll div#vrvTotalAmount {
     width: 6%;
     height: 5vh;
-    margin-left: 69%;
+    margin-left: 77.7%;
     text-align: center;
 }
 
@@ -178,18 +177,23 @@ section#vrvStoreBasket div#vrvBasketPreview div#vrvCountAll div#vrvTotalPrice {
     width: 6%;
     height: 5vh;
     text-align:center;
-    margin-left: 9%;
+    margin-left: 8.4%;
 }
 
 #vrvNone{
-    display: none;
     line-height: 10vh;
     text-align: center;
 }
 
 #vrvItemDB, #vrvItemVPS, #vrvItemCloud {
+    display: none;
     line-height: 10vh;
     clear: both;
+}
+
+#vrvItemType{
+    width: 75%;
+    float: left;
 }
 
 #vrvItemType div#vrvIco {
@@ -205,7 +209,6 @@ section#vrvStoreBasket div#vrvBasketPreview div#vrvCountAll div#vrvTotalPrice {
     color: whitesmoke;
     line-height: 10vh;
     font-size: 30px;
-    float: left;
 }
 
 #vrvAmountVPS, #vrvPriceVPS{
@@ -217,4 +220,30 @@ section#vrvStoreBasket div#vrvBasketPreview div#vrvCountAll div#vrvTotalPrice {
     width: 100%;
     height: 10vh;
     border-bottom: 1px solid white;
+}
+
+#vrvAmountVPS, #vrvAmountCloud, #vrvAmountDB {
+    float: left;
+    width: 12%;
+    text-align: center;
+}
+
+#vrvPriceVPS, #vrvPriceCloud, #vrvPriceDB {
+    float: left;
+    width: 7%;
+    margin-left: 4.5%;
+    text-align: center;
+}
+
+p#vrvRETotal {
+    width: 50px;
+    color: #999999;
+    font-size: 15px;
+    text-align: center;
+}
+input {
+    width: 50px;
+    color: #999999;
+    font-size: 15px;
+    text-align: center;
 }
