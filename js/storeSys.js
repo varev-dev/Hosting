@@ -28,7 +28,6 @@ vrvCountAmount();
 vrvCountPrice();
 
 function vrvVPSAddIntoBasket() {
-    vrvItems += 1;
     vrvCountVPS += 1;
     localStorage.setItem('VPS', vrvCountVPS);
     vrvCountVPS = parseInt(localStorage.getItem('VPS'), 10);
@@ -40,7 +39,6 @@ function vrvVPSAddIntoBasket() {
 }
 
 function vrvCloudAddIntoBasket() {
-    vrvItems += 1;
     vrvCountCloud += 1;
     localStorage.setItem('Cloud', vrvCountCloud);
     vrvCountCloud = parseInt(localStorage.getItem('Cloud'), 10);
@@ -52,7 +50,6 @@ function vrvCloudAddIntoBasket() {
 }
 
 function vrvDBAddIntoBasket() {
-    vrvItems += 1;
     vrvCountDB += 1;
     localStorage.setItem('DB', vrvCountDB);
     vrvCountDB = parseInt(localStorage.getItem('DB'), 10);
@@ -64,7 +61,7 @@ function vrvDBAddIntoBasket() {
 }
 
 function vrvTotalItems() {
-    localStorage.setItem('Total', vrvItems);
+    localStorage.setItem('Total', vrvCountDB + vrvCountVPS + vrvCountCloud);
     vrvItems = parseInt(localStorage.getItem('Total'), 10);
     document.getElementById('vrvCountItems').innerHTML = vrvItems;
 }
