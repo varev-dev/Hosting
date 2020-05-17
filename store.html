@@ -60,7 +60,9 @@ minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
                 <div id="vrvBO">
                     <div id="vrvAboutItem">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper arcu vitae sem vulputate, id consectetur turpis sagittis. Aenean faucibus, ex cursus elementum tristique, dui sapien imperdiet eros, quis finibus ante nibh pulvinar enim.</p>
-                        <p id="vrvPrice">Price: 34.99$/month</p>
+                        <div>
+                            <p id="vrvPrice">34.99$/month</p>
+                        </div>
                     </div>
                     <div id="vrvAddToStore">
                         <button id="vrvVPS" onclick="vrvVPSAddIntoBasket()">Add to Basket</button>
@@ -74,7 +76,9 @@ minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
                 <div id="vrvBO">
                     <div id="vrvAboutItem">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper arcu vitae sem vulputate, id consectetur turpis sagittis. Aenean faucibus, ex cursus elementum tristique, dui sapien imperdiet eros, quis finibus ante nibh pulvinar enim.</p>
-                        <p id="vrvPrice">Price: 19.99$/month</p>
+                        <div>
+                            <p id="vrvPrice">19.99$/month</p>
+                        </div>
                     </div>
                     <div id="vrvAddToStore">
                         <button id="vrvCloud" onclick="vrvCloudAddIntoBasket()">Add to Basket</button>
@@ -88,7 +92,9 @@ minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
                 <div id="vrvBO">
                     <div id="vrvAboutItem">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper arcu vitae sem vulputate, id consectetur turpis sagittis. Aenean faucibus, ex cursus elementum tristique, dui sapien imperdiet eros, quis finibus ante nibh pulvinar enim.</p>
-                        <p id="vrvPrice">Price: 49.99$/month</p>
+                        <div>
+                        <p id="vrvPrice">49.99$/month</p>
+                        </div>
                     </div>
                     <div id="vrvAddToStore">
                         <button id="vrvDB" onclick="vrvDBAddIntoBasket()">Add to Basket</button>
@@ -99,7 +105,54 @@ minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         </section>
         <section id="vrvStoreBasket">
             <div id="vrvBasketPreview">
+                <div id="vrvPreviewTopic">
+                    <h1>In your basket we can see...</h1>
+                </div>
+                <div id="vrvTableWithoutTable">
+                    <div id="vrvInstr">
+                        <div id="vrvType"><p>Type</p></div>
+                        <div id="vrvAmount"><p>Amount</p></div>
+                        <div id="vrvPrice"><p>Price</p></div>
+                    </div>
+                    <div id="vrvItemList">
+                        <div id="vrvNone">
+                            <h1>You didn't choose anything from our offer.</h1>
+                        </div>
+                        <div id="vrvItemVPS">
+                            <div id="vrvItemType">
+                                <div id="vrvIco"><i class="fas fa-server"></i></div><p>Lorem Ipsum selected you as a fucking asshole.</p>
+                            </div>
+                            <div id="vrvAmountVPS">
 
+                            </div>
+                            <div id="vrvPriceVPS">
+
+                            </div>
+                        </div>
+                        <div id="vrvItemCloud">
+                            <div id="vrvItemType">
+                                <div id="vrvIco"><i class="fas fa-cloud"></i></div><p>Lorem Ipsum selected you as a fucking asshole.</p>
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div id="vrvItemDB">
+                            <div id="vrvItemType">
+                                <div id="vrvIco"><i class="fas fa-database"></i></div><p>Lorem Ipsum selected you as a fucking asshole.</p>
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div id="vrvCountAll">
+                        <div id="vrvTotalAmount">
+                            <p>0</p>
+                        </div>
+                        <div id="vrvTotalPrice">
+                            <p>0$</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <script src="https://kit.fontawesome.com/2bb3cc1193.js" crossorigin="anonymous"></script>

@@ -1,10 +1,9 @@
-section {
+section#vrvStoreAdd {
     width: 80%;
     min-height: 75vh;
     background-color: #353535;
     padding: 25vh 10% 0 10%;
     border-bottom: 1px solid black;
-    text-align: center;
 }
 
 section#vrvStoreAdd div#vrvOff {
@@ -36,22 +35,29 @@ section#vrvStoreAdd div#vrvOff div#vrvTO i {
 }
 section#vrvStoreAdd div#vrvOff div#vrvTO i p{
     margin-top: 20px;
+
     font-size: 20px;
 }
 
 section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAboutItem {
     width: 100%;
-    min-height: 25vh;
+    min-height: 26vh;
     background-color: #303030;
     text-align: center;
 }
 
 section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAboutItem p{
+    text-align: center;
     padding: 5% 5% 0 5%;
     color: #bebebe;
 }
-
-section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAboutItem p#vrvPrice {
+section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAboutItem div {
+    margin-left: 50%;
+    min-height: 1vh;
+    width: 100%;
+    text-align: right;
+}
+section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAboutItem div p#vrvPrice {
     color: whitesmoke;
 }
 
@@ -84,4 +90,131 @@ section#vrvStoreAdd div#vrvComment h1 {
     text-align: center;
     left: 10px;
     color: whitesmoke;
+}
+
+section#vrvStoreBasket {
+    height: 80vh;
+    width: 80%;
+    padding: 20vh 10% 0vh 10%;
+    background-color: #353535;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview {
+    width: 100%;
+    height: 80vh;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvPreviewTopic {
+    color: white;
+}
+
+section#vrvStoreBasket div#vrvTableWithoutTable {
+    width: 100%;
+    min-height: 20vh;
+    max-height: 40vh;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvInstr {
+    margin-top: 1vh;
+    width: 100%;
+    height: 5vh;
+    background-color: #1d1d1d;
+    border-bottom: 1px solid #525252;
+}
+
+#vrvType, #vrvAmount, #vrvPrice {
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 20px;
+    float: left;
+    color: whitesmoke;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvInstr div#vrvType {
+    padding: 0 7% 0 3%;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvInstr div#vrvAmount {
+    margin-left: 60%;
+    text-align: center;
+    padding: 0 5% 0 5%;
+}
+section#vrvStoreBasket div#vrvBasketPreview div#vrvInstr div#vrvPrice {
+    margin-left: 5%;
+    text-align: right;
+    padding: 0;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvItemList {
+    width: 100%;
+    min-height: 10vh;
+    max-height: 30vh;
+    background-color: #2e2e2e;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvCountAll {
+    width: 100%;   
+    height: 5vh;
+    border-top: 1px solid #525252;
+    background-color: #1d1d1d;
+}
+
+#vrvTotalAmount, #vrvTotalPrice {
+    float: left;
+    color: whitesmoke;
+    line-height: 5vh;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvCountAll div#vrvTotalAmount {
+    width: 6%;
+    height: 5vh;
+    margin-left: 69%;
+    text-align: center;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvCountAll div#vrvTotalPrice {
+    width: 6%;
+    height: 5vh;
+    text-align:center;
+    margin-left: 9%;
+}
+
+#vrvNone{
+    display: none;
+    line-height: 10vh;
+    text-align: center;
+}
+
+#vrvItemDB, #vrvItemVPS, #vrvItemCloud {
+    line-height: 10vh;
+    clear: both;
+}
+
+#vrvItemType div#vrvIco {
+    float: left;
+    text-align: center;
+    width: 135px;
+    height: 10vh;
+}
+
+#vrvItemType i {
+    display: inline-block;
+    width: 100%;
+    color: whitesmoke;
+    line-height: 10vh;
+    font-size: 30px;
+    float: left;
+}
+
+#vrvAmountVPS, #vrvPriceVPS{
+    float: left;
+}
+
+#vrvNone, #vrvItemVPS, #vrvItemCloud, #vrvItemDB {
+    color: #999999;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid white;
 }

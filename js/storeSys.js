@@ -21,6 +21,7 @@ vrvItems = parseInt(localStorage.getItem('Total'), 10);
 if(localStorage.getItem('Total') == null){
     vrvItems = 0;
 }
+
 document.getElementById('vrvCountItems').innerHTML = vrvItems;
 
 function vrvVPSAddIntoBasket() {
