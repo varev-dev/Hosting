@@ -241,9 +241,58 @@ p#vrvRETotal {
     font-size: 15px;
     text-align: center;
 }
-input {
+
+#vrvREDB, #vrvREVPS, #vrvRECloud {
+    padding-left: 60px;
     width: 50px;
     color: #999999;
     font-size: 15px;
     text-align: center;
+}
+
+#vrvFButton {
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    transition: .5s;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 50px
+}
+
+button#vrvRemoveALL {
+    width: 150px;
+    height: 50px;
+    transition: .5s;
+    background-image: linear-gradient(to right top, #ff0000, #a200ff);
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+button#vrvRemoveALL:hover {
+    color: rgb(0, 255, 255);
+    width: 175px;
+    height: 60px;
+}
+
+button#vrvPayment {
+    width: 150px;
+    height: 50px;
+    transition: .5s;
+    background-image: linear-gradient(to right top, #00a2ff, #00ff00);
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+button#vrvPayment:hover {
+    color: rgb(255, 251, 0);
+    width: 175px;
+    height: 60px;
+}
+.vrvFBz {
+    padding-left: 70%;
 }

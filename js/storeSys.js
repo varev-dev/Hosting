@@ -23,9 +23,9 @@ if(localStorage.getItem('Total') == null){
 }
 
 document.getElementById('vrvCountItems').innerHTML = vrvItems;
-vrvBasketPreview();
 vrvCountAmount();
 vrvCountPrice();
+vrvBasketPreview();
 
 function vrvVPSAddIntoBasket() {
     vrvCountVPS += 1;
@@ -33,9 +33,9 @@ function vrvVPSAddIntoBasket() {
     vrvCountVPS = parseInt(localStorage.getItem('VPS'), 10);
     vrvTotalItems();
     console.log(localStorage);
-    vrvBasketPreview();
     vrvCountAmount();
     vrvCountPrice();
+    vrvBasketPreview();
 }
 
 function vrvCloudAddIntoBasket() {
@@ -44,9 +44,9 @@ function vrvCloudAddIntoBasket() {
     vrvCountCloud = parseInt(localStorage.getItem('Cloud'), 10);
     vrvTotalItems();
     console.log(localStorage);
-    vrvBasketPreview();
     vrvCountAmount();
     vrvCountPrice();
+    vrvBasketPreview();
 }
 
 function vrvDBAddIntoBasket() {
@@ -55,9 +55,9 @@ function vrvDBAddIntoBasket() {
     vrvCountDB = parseInt(localStorage.getItem('DB'), 10);
     vrvTotalItems();
     console.log(localStorage);
-    vrvBasketPreview();
     vrvCountAmount();
     vrvCountPrice();
+    vrvBasketPreview();
 }
 
 function vrvTotalItems() {
@@ -67,11 +67,21 @@ function vrvTotalItems() {
 }
 
 function vrvBasketPreview() {
-    if (localStorage.getItem('VPS') == null && localStorage.getItem('Cloud') == null && localStorage.getItem('DB') == null) {
+    if (localStorage.getItem('VPS') == 0 && localStorage.getItem('Cloud') == 0 && localStorage.getItem('DB') == 0) {
         document.getElementById('vrvNone').style.display = "block";
+        document.getElementById('vrvRemoveALL').style.display = "none";
+        document.getElementById('vrvPayment').style.display = "none";
+        document.getElementById('vrvREtotal').style.display = "none";
+        document.getElementById('vrvPRtotal').style.display = "none";
+    }
+    else {
+        document.getElementById('vrvRemoveALL').style.display = "block";
+        document.getElementById('vrvPayment').style.display = "block";
+        document.getElementById('vrvREtotal').style.display = "block";
+        document.getElementById('vrvPRtotal').style.display = "block";
     }
 
-    if (localStorage.getItem('VPS') == null) {
+    if (localStorage.getItem('VPS') == 0 || localStorage.getItem('VPS') == null) {
         document.getElementById('vrvItemVPS').style.display = "none";
     } 
     else {
@@ -79,7 +89,7 @@ function vrvBasketPreview() {
         document.getElementById('vrvNone').style.display = "none";
     }
 
-    if (localStorage.getItem('Cloud') == null) {
+    if (localStorage.getItem('Cloud') == 0 || localStorage.getItem('Cloud') == null) {
         document.getElementById('vrvItemCloud').style.display = "none";
     }
     else {
@@ -87,7 +97,7 @@ function vrvBasketPreview() {
         document.getElementById('vrvNone').style.display = "none";
     }
 
-    if (localStorage.getItem('DB') == null) {
+    if (localStorage.getItem('DB') == 0 || localStorage.getItem('DB') == null) {
         document.getElementById('vrvItemDB').style.display = "none";
     }
     else {
@@ -97,9 +107,9 @@ function vrvBasketPreview() {
 }
 
 function vrvCountAmount() {
-    document.getElementById('vrvREVPS').value = vrvCountVPS;
-    document.getElementById('vrvRECloud').value = vrvCountCloud;
-    document.getElementById('vrvREDB').value = vrvCountDB;
+    document.getElementById('vrvREVPS').innerHTML = vrvCountVPS;
+    document.getElementById('vrvRECloud').innerHTML = vrvCountCloud;
+    document.getElementById('vrvREDB').innerHTML = vrvCountDB;
     document.getElementById('vrvREtotal').innerHTML = vrvItems;
 }
 
@@ -113,4 +123,21 @@ function vrvCountPrice() {
     document.getElementById('vrvPRCloud').innerHTML = vrvCLOUDprice.toFixed(2) + "$";
     document.getElementById('vrvPRDB').innerHTML = vrvDBprice.toFixed(2) + "$";
     document.getElementById('vrvPRtotal').innerHTML = vrvTotalPrice.toFixed(2) + "$";
+}
+
+function vrvClearBasket() {
+    vrvCountVPS = 0;
+    vrvCountDB = 0;
+    vrvCountCloud = 0;
+    vrvItems = 0;
+
+    localStorage.setItem('VPS', vrvCountVPS);
+    localStorage.setItem('Cloud', vrvCountCloud);
+    localStorage.setItem('DB', vrvCountDB);
+    localStorage.setItem('Total', vrvItems);
+
+    vrvCountPrice();
+    vrvCountAmount();
+    vrvTotalItems();
+    vrvBasketPreview();
 }

@@ -123,7 +123,7 @@ minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
                                 <div id="vrvIco"><i class="fas fa-server"></i></div><p>Lorem Ipsum selected you as a fucking asshole.</p>
                             </div>
                             <div id="vrvAmountVPS">
-                                <input type="number" id="vrvREVPS">
+                                <p id="vrvREVPS"></p>
                             </div>
                             <div id="vrvPriceVPS">
                                 <p id="vrvPRVPS"></p>
@@ -134,7 +134,7 @@ minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
                                 <div id="vrvIco"><i class="fas fa-cloud"></i></div><p>Lorem Ipsum selected you as a fucking asshole.</p>
                             </div>
                             <div id="vrvAmountCloud">
-                                <input type="number" id="vrvRECloud">
+                                <p id="vrvRECloud"></p>
                             </div>
                             <div id="vrvPriceCloud">
                                 <p id="vrvPRCloud"></p>
@@ -145,7 +145,7 @@ minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
                                 <div id="vrvIco"><i class="fas fa-database"></i></div><p>Lorem Ipsum selected you as a fucking asshole.</p>
                             </div>
                             <div id="vrvAmountDB">
-                                <input type="number" id="vrvREDB">
+                                <p id="vrvREDB"></p>
                             </div>
                             <div id="vrvPriceCloud">
                                 <p id="vrvPRDB"></p>
@@ -161,9 +161,12 @@ minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
                         </div>
                     </div>
                 </div>
-                <button>Remove All</button>
-                <button onclick="">Reload Basket</button>
-                <button>LETSSSSSSSSSS GO</button>
+                <div id="vrvFButton" class="vrvFBz">
+                    <button id="vrvRemoveALL" onclick="vrvClearBasket()">Remove All</button>
+                </div>
+                <div id="vrvFButton">
+                    <button id="vrvPayment">Payment</button>
+                </div>
             </div>
         </section>
         <script src="https://kit.fontawesome.com/2bb3cc1193.js" crossorigin="anonymous"></script>
