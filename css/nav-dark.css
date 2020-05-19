@@ -1,0 +1,27 @@
+nav#vrvNavigation div#vrvNavL a div#vrvLogo {
+    background-color: #000000;
+}
+
+nav#vrvNavigation div#vrvNavL a {
+    color: #00ffff;
+    transition: .5s;
+}
+
+nav#vrvNavigation div#vrvNavL a:hover{
+    color: #00bbbb;
+}
+
+nav#vrvNavigation div#vrvNavR ul#vrvMenu li a button:hover {
+    background-color: black;
+    color: #00bbbb;
+}
+
+nav#vrvNavigation div#vrvNavR ul#vrvMenu li a button#vrvActual{
+    background-color: black;
+    color: #00ffff;
+}
+
+nav#vrvSettings button {
+    background-color: black;
+    color: white;
+}
