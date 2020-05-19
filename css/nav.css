@@ -70,11 +70,31 @@ nav#vrvNavigation div#vrvNavR ul#vrvMenu li a button {
 nav#vrvSettings {
     position: fixed;
     margin-top: 40vh;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     line-height: 40px;
 }
 
+nav#vrvSettings div#vrvBasket {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    text-align: center;
+}
+
+nav#vrvSettings div#vrvBasket a{
+    text-decoration: none;
+    color: white;
+}
+
+nav#vrvSettings div#vrvBasket a p{
+    position: absolute;
+    top: 10px;
+    left: 24px;
+    color: rgb(0, 255, 255);
+    font-size: 12px;
+    transition: .1s;
+}
 nav#vrvSettings button {
     width: 40px;
     height: 40px;

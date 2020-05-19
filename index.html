@@ -25,7 +25,7 @@ minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
             <div id="vrvNavR">
                 <ul id="vrvMenu">
                     <li><a href=""><button id="vrvContact">Contact</button></a></li>
-                    <li><a href=""><button>Store</button></a></li>
+                    <li><a href="store.html"><button>Store</button></a></li>
                     <li><a href=""><button>Offer</button></a></li>
                     <li><a href=""><button>About</button></a></li>
                     <li><a href=""><button id="vrvActual">Home</button></a></li>
@@ -33,9 +33,16 @@ minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
             </div>
         </nav>
         <nav id="vrvSettings">
+            <div id="vrvBasket">
+                <a href="store.html#vrvStoreAdd">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p id="vrvCountItems"></p>
+                </a>
+            </div>
             <button onclick="vrvThemeType()"><i class="fas fa-adjust" id="vrvIcon"></i></button>
         </nav>
         <script src="https://kit.fontawesome.com/2bb3cc1193.js" crossorigin="anonymous"></script>
         <script src="js/theme.js" async defer></script>
+        <script src="js/storeSys.js" async defer></script>
     </body>
 </html>

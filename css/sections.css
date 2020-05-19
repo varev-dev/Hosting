@@ -1,0 +1,298 @@
+section#vrvStoreAdd {
+    width: 80%;
+    min-height: 75vh;
+    background-color: #353535;
+    padding: 25vh 10% 0 10%;
+    border-bottom: 1px solid black;
+}
+
+section#vrvStoreAdd div#vrvOff {
+    height: 50vh;
+    width: 25%;
+    float: left;
+}
+
+section#vrvStoreAdd div.sec {
+    margin-left: 12.5%;
+}
+
+section#vrvStoreAdd div#vrvOff div#vrvTO {
+    width: 100%;
+    height: 15vh;
+    background-color: #1d1d1d;
+    text-align: center;
+    line-height: 25vh;
+}
+
+section#vrvStoreAdd div#vrvOff div#vrvBO {
+    width: 100%;
+    min-height: 30vh;
+}
+
+section#vrvStoreAdd div#vrvOff div#vrvTO i {
+    color: white;
+    font-size: 40px;
+}
+section#vrvStoreAdd div#vrvOff div#vrvTO i p{
+    margin-top: 20px;
+
+    font-size: 20px;
+}
+
+section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAboutItem {
+    width: 100%;
+    min-height: 26vh;
+    background-color: #303030;
+    text-align: center;
+}
+
+section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAboutItem p{
+    text-align: center;
+    padding: 5% 5% 0 5%;
+    color: #bebebe;
+}
+section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAboutItem div {
+    min-height: 1vh;
+    width: 100%;
+    text-align: center;
+}
+section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAboutItem div p#vrvPrice {
+    color: whitesmoke;
+}
+
+section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAddToStore {
+    width: 100%;
+    height: 5vh;
+    background-color: #1d1d1d;
+    text-align: center;
+    line-height: 5vh;
+}
+
+section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAddToStore button {
+    width: 100%;
+    height: 5vh;
+    font-size: 15px;
+    color: white;
+    transition: .5s;
+}
+
+section#vrvStoreAdd div#vrvOff div#vrvBO div#vrvAddToStore button:hover {
+    background-color: #0a0a0ad0;
+    color: rgb(0, 255, 255);
+}
+section div#vrvComment {
+    width: 100%;
+    height: 25vh;
+}
+section#vrvStoreAdd div#vrvComment h1 {
+    clear: both;
+    text-align: center;
+    left: 10px;
+    color: whitesmoke;
+}
+
+section#vrvStoreBasket {
+    height: 80vh;
+    width: 80%;
+    padding: 20vh 10% 0vh 10%;
+    background-color: #353535;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview {
+    width: 100%;
+    height: 80vh;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvPreviewTopic {
+    color: white;
+}
+
+section#vrvStoreBasket div#vrvTableWithoutTable {
+    width: 100%;
+    min-height: 20vh;
+    max-height: 40vh;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvInstr {
+    margin-top: 1vh;
+    width: 100%;
+    height: 5vh;
+    background-color: #1d1d1d;
+    border-bottom: 1px solid #525252;
+}
+
+#vrvType, #vrvAmount, #vrvPriceTT {
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 20px;
+    float: left;
+    color: whitesmoke;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvInstr div#vrvType {
+    padding: 0 7% 0 3%;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvInstr div#vrvAmount {
+    margin-left: 60%;
+    text-align: center;
+    padding: 0 5% 0 5%;
+}
+section#vrvStoreBasket div#vrvBasketPreview div#vrvInstr div#vrvPriceTT {
+    margin-left: 5%;
+    text-align: right;
+    padding: 0;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvItemList {
+    width: 100%;
+    min-height: 10vh;
+    max-height: 30vh;
+    background-color: #2e2e2e;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvCountAll {
+    width: 100%;   
+    height: 5vh;
+    border-top: 1px solid #525252;
+    background-color: #1d1d1d;
+}
+
+#vrvTotalAmount, #vrvTotalPrice {
+    float: left;
+    color: whitesmoke;
+    line-height: 5vh;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvCountAll div#vrvTotalAmount {
+    width: 6%;
+    height: 5vh;
+    margin-left: 77.7%;
+    text-align: center;
+}
+
+section#vrvStoreBasket div#vrvBasketPreview div#vrvCountAll div#vrvTotalPrice {
+    width: 6%;
+    height: 5vh;
+    text-align:center;
+    margin-left: 8.4%;
+}
+
+#vrvNone{
+    line-height: 10vh;
+    text-align: center;
+}
+
+#vrvItemDB, #vrvItemVPS, #vrvItemCloud {
+    display: none;
+    line-height: 10vh;
+    clear: both;
+}
+
+#vrvItemType{
+    width: 75%;
+    float: left;
+}
+
+#vrvItemType div#vrvIco {
+    float: left;
+    text-align: center;
+    width: 135px;
+    height: 10vh;
+}
+
+#vrvItemType i {
+    display: inline-block;
+    width: 100%;
+    color: whitesmoke;
+    line-height: 10vh;
+    font-size: 30px;
+}
+
+#vrvAmountVPS, #vrvPriceVPS{
+    float: left;
+}
+
+#vrvNone, #vrvItemVPS, #vrvItemCloud, #vrvItemDB {
+    color: #999999;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid white;
+}
+
+#vrvAmountVPS, #vrvAmountCloud, #vrvAmountDB {
+    float: left;
+    width: 12%;
+    text-align: center;
+}
+
+#vrvPriceVPS, #vrvPriceCloud, #vrvPriceDB {
+    float: left;
+    width: 7%;
+    margin-left: 4.5%;
+    text-align: center;
+}
+
+p#vrvRETotal {
+    width: 50px;
+    color: #999999;
+    font-size: 15px;
+    text-align: center;
+}
+
+#vrvREDB, #vrvREVPS, #vrvRECloud {
+    padding-left: 60px;
+    width: 50px;
+    color: #999999;
+    font-size: 15px;
+    text-align: center;
+}
+
+#vrvFButton {
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    transition: .5s;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 50px
+}
+
+button#vrvRemoveALL {
+    width: 150px;
+    height: 50px;
+    transition: .5s;
+    background-image: linear-gradient(to right top, #ff0000, #a200ff);
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+button#vrvRemoveALL:hover {
+    color: rgb(0, 255, 255);
+    width: 175px;
+    height: 60px;
+}
+
+button#vrvPayment {
+    width: 150px;
+    height: 50px;
+    transition: .5s;
+    background-image: linear-gradient(to right top, #00a2ff, #00ff00);
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+button#vrvPayment:hover {
+    color: rgb(255, 251, 0);
+    width: 175px;
+    height: 60px;
+}
+.vrvFBz {
+    padding-left: 70%;
+}
