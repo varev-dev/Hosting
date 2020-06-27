@@ -1,2 +1,2 @@
 # Hosting
-Another useless project for Michael Hylson.
+Simple shoping system based on cookie files.
